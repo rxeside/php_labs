@@ -20,13 +20,13 @@
 
     ?>
 
-    <h2>Имя: <?php echo htmlentities($name . " " . $surname); ?></h2>
-    <h2>Возраст: <?php echo htmlentities($age); ?></h2>
+    <h2>Имя: <?php echo ($name . " " . $surname); ?></h2>
+    <h2>Возраст: <?php echo ($age); ?></h2>
 
     <h2>Интересы:</h2>
     <ul>
         <?php foreach ($interests as $interest) : ?>
-            <li><?php echo htmlentities($interest); ?></li>
+            <li><?php echo ($interest); ?></li>
         <?php endforeach; ?>
     </ul>
 </body>
